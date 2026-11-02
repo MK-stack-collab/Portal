@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+    <!-- MAIN -->
+
+    <main class="main">
+
+        <header>
+
+            <h1>Dashboard</h1>
+
+            <p>Welcome Admin</p>
+
+        </header>
+
+        <!-- STATISTICS -->
+
+        <section class="stats">
+
+            <div class="box">
+
+                <h3>Total Students</h3>
+
+                <span id="totalStudents"></span>
+
+            </div>
+
+            <div class="box">
+
+                <h3>Admitted</h3>
+
+                <span id="admitted"></span>
+
+            </div>
+
+            <div class="box">
+
+                <h3>Pending</h3>
+
+                <span id="pending"></span>
+
+            </div>
+
+            <div class="box">
+
+                <h3>Rejected</h3>
+
+                <span id="rejected"></span>
+
+            </div>
+
+        </section>
+
+        <!-- BOOK STUDENT -->
+
+        <section class="form">
+
+            <h2>Book Student</h2>
+
+            <input type="text" id="studentname"
+            placeholder="Student Name">
+
+            <input type="text" id="studentcourse"
+            placeholder="Course">
+
+
+            <button id="bookbtn">
+
+                Book Student
+
+            </button>
+
+        </section>
+
+        <!-- TABLE -->
+
+        <section class="table">
+
+            <h2>Registered Students</h2>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Name</th>
+
+                        <th>Course</th>
+
+                        <th>Status</th>
+
+                        <th>Action</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="studenttable">
+
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="admin.js"></script>
+
+</body>
+</html>
